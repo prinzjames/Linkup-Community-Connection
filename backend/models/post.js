@@ -45,4 +45,5 @@ const postSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
+// ✅ FIX FOR RELOAD / RENDER HOT RESTARTS
 module.exports = mongoose.models.Post || mongoose.model("Post", postSchema);
